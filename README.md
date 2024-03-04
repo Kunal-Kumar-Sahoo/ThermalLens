@@ -44,13 +44,13 @@ To run the code, follow these steps:
 1. Clone the repository to your local machine:
 
    ```
-   git clone https://github.com/your_username/thermal-camera-connected-component-detection.git
+   git clone https://github.com/Kunal-Kumar-Sahoo/ThermalLens.git
    ```
 
 2. Navigate to the project directory:
 
    ```
-   cd thermal-camera-connected-component-detection
+   cd ThermalLens
    ```
 
 3. Install the required Python packages:
