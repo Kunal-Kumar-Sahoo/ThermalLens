@@ -88,7 +88,7 @@ def find_frequency_peaks(connected_components, fps):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Detect connected components in a thermal camera video.')
-    parser.add_argument('video_path', type=str, help='Path to the thermal camera footage in .mp4 format')
+    parser.add_argument('--path', type=str, help='Path to the thermal camera footage in .mp4 format')
     parser.add_argument('--frequency_range', nargs=2, type=float, default=[0, 1], help='Frequency range in Hz (e.g., 0 1)')
     args = parser.parse_args()
 
@@ -98,7 +98,7 @@ if __name__ == "__main__":
 
     threshold = 100
 
-    connected_components = find_connected_components(args.video_path, frequency_range, threshold, fps)
+    connected_components = find_connected_components(args.path, frequency_range, threshold, fps)
 
     frequencies = find_frequency_peaks(connected_components, fps)
 
